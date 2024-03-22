@@ -16,10 +16,10 @@ public class Numbersum {
         System.out.println('1');
         while(!counted){
             
-        
+            tot+= count;
            
             count += 1;
-            tot+= count;
+            
             System.out.println(count);
             if(count == num){
                 counted = true;
