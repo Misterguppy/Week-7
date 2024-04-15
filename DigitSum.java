@@ -4,19 +4,19 @@ import java.util.*;
 public class DigitSum {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
-        System.out.print("Enter a positive integer: ");
-        int pos = input.nextInt();
+        System.out.print("Enter a number. Preferably not too high. ");
+        int endGoal = input.nextInt();
         input.close();
-        int mods = 10;
-        int tot = 0;
-        while(pos > mods){
-            pos = pos % mods;
-            tot = tot + pos;
-            mods = mods* 10;
+        boolean counted = false;
+        int numCount = 1;
+        int Count = 1;
+        while(!counted){
+            System.out.println(numCount);
+            numCount += 1;
+            Count += numCount;
+            if(numCount == endGoal)
+            counted = true;
         }
-           
-
-        System.out.print("The sum of the digits is: "+tot);
+        System.out.println(Count);
     }
-
 }
